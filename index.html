@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TraceGuardAI — Observe. Protect. Optimize. Your AI in real time.</title>
+  <meta name="description" content="TraceGuardAI gives engineering teams real-time visibility into production AI systems—helping you control costs, block security threats, monitor performance, and catch model errors before they reach users.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TraceGuardAI — Observe. Protect. Optimize. Your AI in real time.">
+  <meta property="og:description" content="Real-time AI observability, guardrails, and cost management for production AI systems.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===================== 1. NAVIGATION ===================== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__logo" href="#top" aria-label="TraceGuardAI home">TraceGuardAI</a>
+
+      <button
+        class="nav__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span class="visually-hidden">Menu</span>
+        <svg class="nav__toggle-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path class="nav__toggle-line nav__toggle-line--top" d="M3 6h18" />
+          <path class="nav__toggle-line nav__toggle-line--middle" d="M3 12h18" />
+          <path class="nav__toggle-line nav__toggle-line--bottom" d="M3 18h18" />
+        </svg>
+      </button>
+
+      <div class="nav__panel" id="primary-navigation">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#platform">Platform</a></li>
+          <li><a class="nav__link" href="#solutions">Solutions</a></li>
+          <li><a class="nav__link" href="#security">Security</a></li>
+          <li>
+            <button class="nav__link nav__link--disabled" type="button" disabled>
+              Pricing <span class="nav__soon">Coming soon</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav__link nav__link--disabled" type="button" disabled>
+              Resources <span class="nav__soon">Coming soon</span>
+            </button>
+          </li>
+        </ul>
+
+        <div class="nav__actions">
+          <button class="btn btn--ghost" type="button" data-demo-action="sign-in">Sign In</button>
+          <button class="btn btn--primary" type="button" data-demo-action="get-started">Get Started</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===================== 2. HERO ===================== -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">AI OBSERVABILITY • GUARDRAILS • COST MANAGEMENT</p>
+          <h1 class="hero__heading">Observe. Protect. Optimize. Your AI in real time.</h1>
+          <p class="hero__lead">
+            TraceGuardAI gives engineering teams real-time visibility into production AI
+            systems—helping you control costs, block security threats, monitor performance,
+            and catch model errors before they reach users.
+          </p>
+          <div class="hero__actions">
+            <button class="btn btn--primary btn--large" type="button" data-demo-action="get-started">
+              Get Started
+            </button>
+            <a class="btn btn--secondary btn--large" href="#platform">Explore Platform →</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero-preview">
+            <div class="hero-preview__header">
+              <span class="hero-preview__dot"></span>
+              <span class="hero-preview__dot"></span>
+              <span class="hero-preview__dot"></span>
+            </div>
+            <div class="hero-preview__body">
+              <div class="hero-preview__stat">
+                <span class="hero-preview__stat-label">AI Requests</span>
+                <span class="hero-preview__stat-value">128,402</span>
+              </div>
+              <div class="hero-preview__stat">
+                <span class="hero-preview__stat-label">AI Cost (24h)</span>
+                <span class="hero-preview__stat-value">$482.16</span>
+              </div>
+              <div class="hero-preview__stat">
+                <span class="hero-preview__stat-label">Avg TTFT</span>
+                <span class="hero-preview__stat-value">318ms</span>
+              </div>
+              <div class="hero-preview__graph"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. TRUST / AI ECOSYSTEM ===================== -->
+    <section class="ecosystem" aria-labelledby="ecosystem-heading">
+      <div class="container">
+        <h2 class="ecosystem__heading" id="ecosystem-heading">
+          One observability layer across your AI stack.
+        </h2>
+        <p class="ecosystem__lead">Designed for multi-provider AI environments.</p>
+
+        <ul class="ecosystem__list">
+          <li class="ecosystem__item">OpenAI</li>
+          <li class="ecosystem__item">Anthropic</li>
+          <li class="ecosystem__item">Google</li>
+          <li class="ecosystem__item">Azure</li>
+          <li class="ecosystem__item">AWS</li>
+        </ul>
+        <p class="ecosystem__note">
+          Shown as examples of provider environments TraceGuardAI is designed to observe—
+          not as customers or confirmed integrations.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== 4. PROBLEM & VALUE PROPOSITION ===================== -->
+    <section class="problem" id="problem" aria-labelledby="problem-heading">
+      <div class="container">
+        <h2 class="problem__heading" id="problem-heading">Production AI shouldn't be a black box.</h2>
+
+        <div class="grid grid--2x2">
+          <article class="card">
+            <h3 class="card__title">Unexpected Costs</h3>
+            <p class="card__text">AI usage can grow quickly and become difficult to monitor.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Security Threats</h3>
+            <p class="card__text">
+              Prompt injection, jailbreak attempts, and data exposure can create security risks.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Latency &amp; Errors</h3>
+            <p class="card__text">
+              Slow responses, failed requests, and pipeline execution problems can affect user
+              experience.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Unreliable AI Outputs</h3>
+            <p class="card__text">
+              Hallucinations and incorrect responses can reduce trust in AI-powered applications.
+            </p>
+          </article>
+        </div>
+
+        <p class="problem__conclusion">
+          TraceGuardAI brings these signals together into one operational visibility and
+          control layer.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== 5. CORE CAPABILITIES ===================== -->
+    <section class="capabilities" id="platform" aria-labelledby="capabilities-heading">
+      <div class="container">
+        <h2 class="capabilities__heading" id="capabilities-heading">
+          Everything you need to run AI in production with confidence.
+        </h2>
+
+        <div class="grid grid--2x2">
+          <article class="card card--capability">
+            <h3 class="card__title">Control AI Costs</h3>
+            <p class="card__text">
+              Track token usage, identify expensive workloads, and optimize AI spending.
+            </p>
+          </article>
+
+          <article class="card card--capability" id="security">
+            <h3 class="card__title">Block Security Exploits</h3>
+            <p class="card__text">
+              Detect prompt injection, jailbreak attempts, and sensitive data exposure.
+            </p>
+          </article>
+
+          <article class="card card--capability">
+            <h3 class="card__title">Monitor Performance</h3>
+            <p class="card__text">
+              Monitor TTFT, latency, failed requests, and execution delays.
+            </p>
+          </article>
+
+          <article class="card card--capability">
+            <h3 class="card__title">Detect AI Quality Issues</h3>
+            <p class="card__text">
+              Monitor groundedness, hallucinations, and unreliable or harmful outputs.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. PRODUCT DASHBOARD SHOWCASE ===================== -->
+    <section class="dashboard-section" id="dashboard" aria-labelledby="dashboard-heading">
+      <div class="container">
+        <h2 class="dashboard-section__heading" id="dashboard-heading">See your AI systems clearly.</h2>
+        <p class="dashboard-section__lead">
+          Trace requests, monitor performance, investigate security events, and understand AI
+          spending from a single operational view.
+        </p>
+
+        <div class="dashboard-mockup">
+          <nav class="dashboard-mockup__sidebar" aria-label="Dashboard navigation (demo)">
+            <ul>
+              <li><button type="button" class="dashboard-mockup__nav-item is-active">Overview</button></li>
+              <li><button type="button" class="dashboard-mockup__nav-item">Costs</button></li>
+              <li><button type="button" class="dashboard-mockup__nav-item">Security</button></li>
+              <li><button type="button" class="dashboard-mockup__nav-item">Performance</button></li>
+              <li><button type="button" class="dashboard-mockup__nav-item">Quality</button></li>
+              <li><button type="button" class="dashboard-mockup__nav-item">Settings</button></li>
+            </ul>
+          </nav>
+
+          <div class="dashboard-mockup__main">
+            <div class="dashboard-mockup__metrics">
+              <div class="metric-tile">
+                <span class="metric-tile__label">AI Requests</span>
+                <span class="metric-tile__value">128,402</span>
+                <span class="metric-tile__trend metric-tile__trend--up">+4.2%</span>
+              </div>
+              <div class="metric-tile">
+                <span class="metric-tile__label">AI Cost</span>
+                <span class="metric-tile__value">$3,214.88</span>
+                <span class="metric-tile__trend metric-tile__trend--warning">+11.6%</span>
+              </div>
+              <div class="metric-tile">
+                <span class="metric-tile__label">Average TTFT</span>
+                <span class="metric-tile__value">318ms</span>
+                <span class="metric-tile__trend metric-tile__trend--up">-6.1%</span>
+              </div>
+              <div class="metric-tile">
+                <span class="metric-tile__label">Error Rate</span>
+                <span class="metric-tile__value">0.42%</span>
+                <span class="metric-tile__trend metric-tile__trend--down">+0.08%</span>
+              </div>
+            </div>
+
+            <div
+              class="dashboard-mockup__graph"
+              role="img"
+              aria-label="Mock chart showing AI request volume over the past 7 days (demonstration data, not real usage)"
+            ></div>
+
+            <div class="dashboard-mockup__lower">
+              <div class="dashboard-mockup__events">
+                <h3 class="dashboard-mockup__subheading">Recent Events</h3>
+                <ul class="event-list">
+                  <li class="event-list__item">
+                    <span class="event-list__badge event-list__badge--warning">Cost</span>
+                    Workload "batch-summarizer" exceeded hourly token budget.
+                  </li>
+                  <li class="event-list__item">
+                    <span class="event-list__badge event-list__badge--danger">Security</span>
+                    Blocked a suspected prompt injection attempt on endpoint /chat.
+                  </li>
+                  <li class="event-list__item">
+                    <span class="event-list__badge event-list__badge--info">Performance</span>
+                    Latency spike detected on model gateway (region: mock-us-east).
+                  </li>
+                  <li class="event-list__item">
+                    <span class="event-list__badge event-list__badge--warning">Quality</span>
+                    Low groundedness score flagged on a customer-support response.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dashboard-mockup__indicators">
+                <h3 class="dashboard-mockup__subheading">Security &amp; Quality</h3>
+                <ul class="indicator-list">
+                  <li class="indicator-list__item">
+                    <span class="indicator-dot indicator-dot--success" aria-hidden="true"></span>
+                    Jailbreak attempts blocked: 12 (24h)
+                  </li>
+                  <li class="indicator-list__item">
+                    <span class="indicator-dot indicator-dot--warning" aria-hidden="true"></span>
+                    Hallucination flags: 5 (24h)
+                  </li>
+                  <li class="indicator-list__item">
+                    <span class="indicator-dot indicator-dot--success" aria-hidden="true"></span>
+                    Sensitive data exposures: 0 (24h)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="dashboard-section__disclaimer">
+          All figures shown are demonstrative sample data for illustration purposes only.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== 7. HOW IT WORKS ===================== -->
+    <section class="how-it-works" id="how-it-works" aria-labelledby="how-it-works-heading">
+      <div class="container">
+        <h2 class="how-it-works__heading" id="how-it-works-heading">
+          One layer between your application and your AI stack.
+        </h2>
+
+        <ol class="flow">
+          <li class="flow__step">
+            <span class="flow__label">Your Application</span>
+          </li>
+          <li class="flow__step flow__step--core">
+            <span class="flow__label">TraceGuardAI</span>
+            <ul class="flow__responsibilities">
+              <li>Observe</li>
+              <li>Protect</li>
+              <li>Optimize</li>
+            </ul>
+          </li>
+          <li class="flow__step">
+            <span class="flow__label">AI Providers</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== 8. SOLUTIONS / WHO IT'S FOR ===================== -->
+    <section class="solutions" id="solutions" aria-labelledby="solutions-heading">
+      <div class="container">
+        <h2 class="solutions__heading" id="solutions-heading">
+          Built around how different teams work with AI.
+        </h2>
+
+        <div class="grid grid--3col">
+          <article class="card card--solution">
+            <p class="card__eyebrow">Software &amp; AI Engineers</p>
+            <h3 class="card__title">Debug every AI request.</h3>
+            <p class="card__text">
+              Help engineers inspect requests, understand failures, and investigate AI behavior.
+            </p>
+          </article>
+
+          <article class="card card--solution">
+            <p class="card__eyebrow">Engineering Leaders</p>
+            <h3 class="card__title">Keep AI spending predictable.</h3>
+            <p class="card__text">
+              Give engineering leaders visibility into AI usage and costs.
+            </p>
+          </article>
+
+          <article class="card card--solution">
+            <p class="card__eyebrow">DevOps &amp; Security Teams</p>
+            <h3 class="card__title">Protect production AI endpoints.</h3>
+            <p class="card__text">
+              Help teams monitor AI systems and identify security threats.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 9. FINAL CTA ===================== -->
+    <section class="final-cta" id="cta" aria-labelledby="final-cta-heading">
+      <div class="container final-cta__inner">
+        <h2 class="final-cta__heading" id="final-cta-heading">Take control of your AI stack.</h2>
+        <p class="final-cta__lead">
+          Get the visibility, protection, and cost control your production AI systems need.
+        </p>
+        <div class="final-cta__actions">
+          <button class="btn btn--primary btn--large" type="button" data-demo-action="get-started">
+            Get Started
+          </button>
+          <a class="btn btn--secondary btn--large" href="#platform">Explore Platform →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== 10. FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <p class="site-footer__logo">TraceGuardAI</p>
+        <p class="site-footer__tagline">AI Observability, Guardrails &amp; Cost Management</p>
+      </div>
+
+      <nav class="site-footer__group" aria-label="Platform links">
+        <h3 class="site-footer__heading">Platform</h3>
+        <ul>
+          <li><a href="#platform">Capabilities</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+        </ul>
+      </nav>
+
+      <nav class="site-footer__group" aria-label="Solutions links">
+        <h3 class="site-footer__heading">Solutions</h3>
+        <ul>
+          <li><a href="#solutions">Who It's For</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__group">
+        <h3 class="site-footer__heading">Resources</h3>
+        <ul>
+          <li><span class="site-footer__soon">Documentation — coming soon</span></li>
+          <li><span class="site-footer__soon">Blog — coming soon</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="site-footer__copyright">© 2026 TraceGuardAI</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
