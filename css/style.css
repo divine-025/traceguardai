@@ -546,3 +546,110 @@ section {
     margin-left: auto;
   }
 }
+/* --------------------------------------------------------------------------
+   9. HERO
+   -------------------------------------------------------------------------- */
+
+.hero__grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-48);
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .hero__grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: var(--space-64);
+    align-items: center;
+  }
+}
+
+.hero__content {
+  width: 100%;
+}
+
+.hero__heading {
+  margin-top: var(--space-16);
+  margin-bottom: var(--space-24);
+}
+
+.hero__lead {
+  font-size: var(--fs-body-lg);
+  color: var(--color-text-secondary);
+  max-width: 56ch;
+  margin-bottom: var(--space-32);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-16);
+}
+
+.hero__visual {
+  width: 100%;
+}
+
+.hero-preview {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-panel);
+  padding: var(--space-24);
+  box-shadow: 0 24px 60px -32px rgba(0, 0, 0, 0.6);
+}
+
+.hero-preview__header {
+  display: flex;
+  gap: var(--space-8);
+  margin-bottom: var(--space-16);
+}
+
+.hero-preview__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-border);
+}
+
+.hero-preview__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.hero-preview__stat {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: var(--space-12);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hero-preview__stat:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.hero-preview__stat-label {
+  font-size: var(--fs-small);
+  color: var(--color-text-secondary);
+}
+
+.hero-preview__stat-value {
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-primary);
+}
+
+.hero-preview__graph {
+  margin-top: var(--space-8);
+  height: 96px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(180deg, rgba(34, 211, 238, 0.28), rgba(34, 211, 238, 0));
+  clip-path: polygon(
+    0% 80%, 10% 62%, 20% 70%, 32% 42%, 45% 55%,
+    58% 30%, 70% 46%, 82% 22%, 100% 36%, 100% 100%, 0% 100%
+  );
+}
