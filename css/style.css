@@ -715,3 +715,21 @@ section {
   color: var(--color-text-primary);
   max-width: 65ch;
 }
+/* --------------------------------------------------------------------------
+   12. CORE CAPABILITIES
+   -------------------------------------------------------------------------- */
+
+.capabilities {
+  background-color: var(--color-surface-alt);
+}
+
+.capabilities__heading {
+  max-width: 620px;
+  margin-inline: auto;
+  margin-bottom: var(--space-48);
+  text-align: center;
+}
+
+.card--capability {
+  border-top: 2px solid var(--color-accent);
+}
