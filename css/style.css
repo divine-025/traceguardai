@@ -653,3 +653,47 @@ section {
     58% 30%, 70% 46%, 82% 22%, 100% 36%, 100% 100%, 0% 100%
   );
 }
+/* --------------------------------------------------------------------------
+   10. TRUST / AI ECOSYSTEM
+   -------------------------------------------------------------------------- */
+
+.ecosystem {
+  text-align: center;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.ecosystem__heading {
+  font-size: var(--fs-h3);
+  margin-bottom: var(--space-8);
+}
+
+.ecosystem__lead {
+  font-size: var(--fs-body);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-32);
+}
+
+.ecosystem__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-40);
+  margin-bottom: var(--space-24);
+}
+
+.ecosystem__item {
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-secondary);
+  letter-spacing: 0.01em;
+}
+
+.ecosystem__note {
+  font-size: var(--fs-caption);
+  color: var(--color-text-secondary);
+  max-width: 48ch;
+  margin-inline: auto;
+}
