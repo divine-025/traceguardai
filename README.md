@@ -223,7 +223,7 @@ to any static host. Placeholder instructions for common options:
 - **Netlify / Vercel:** connect the repository; no build command is needed —
   set the publish directory to the project root.
 
-*(project deployed at: )*
+*(project deployed at: https://divine-025.github.io/traceguardai/ )*
 
 ## License
 
