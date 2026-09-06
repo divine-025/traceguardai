@@ -1092,3 +1092,28 @@ section {
     transform: translateY(-50%);
   }
 }
+
+/* --------------------------------------------------------------------------
+   15. SOLUTIONS / WHO IT'S FOR
+   -------------------------------------------------------------------------- */
+
+.solutions {
+  background-color: var(--color-surface-alt);
+}
+
+.solutions__heading {
+  max-width: 620px;
+  margin-inline: auto;
+  margin-bottom: var(--space-48);
+  text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .solutions .grid--3col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card--solution .card__title {
+  font-size: var(--fs-h3);
+}
