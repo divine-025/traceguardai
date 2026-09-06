@@ -1003,3 +1003,92 @@ section {
 .indicator-dot--warning {
   background-color: var(--color-warning);
 }
+/* --------------------------------------------------------------------------
+   14. HOW IT WORKS
+   -------------------------------------------------------------------------- */
+
+.how-it-works__heading {
+  max-width: 620px;
+  margin-inline: auto;
+  margin-bottom: var(--space-64);
+  text-align: center;
+}
+
+.flow {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-64);
+}
+
+@media (min-width: 1024px) {
+  .flow {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.flow__step {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-16);
+  text-align: center;
+  padding: var(--space-24);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
+
+.flow__step--core {
+  border-color: var(--color-accent);
+  background-color: var(--color-surface-alt);
+}
+
+.flow__label {
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-primary);
+}
+
+.flow__responsibilities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-8);
+}
+
+.flow__responsibilities li {
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-semibold);
+  color: var(--color-accent);
+  background-color: rgba(34, 211, 238, 0.12);
+  padding: var(--space-4) var(--space-12);
+  border-radius: var(--radius-sm);
+}
+
+/* Connector arrows between steps (decorative) */
+.flow__step:not(:last-child)::after {
+  content: '↓';
+  position: absolute;
+  bottom: calc(-1 * var(--space-64) / 2 - 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--color-text-secondary);
+}
+
+@media (min-width: 1024px) {
+  .flow__step:not(:last-child)::after {
+    content: '→';
+    bottom: auto;
+    left: auto;
+    right: calc(-1 * var(--space-64) / 2 - 12px);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
