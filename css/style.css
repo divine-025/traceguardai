@@ -890,22 +890,27 @@ section {
   font-weight: var(--fw-semibold);
   color: var(--color-text-primary);
 }
-
 .metric-tile__trend {
+  align-self: flex-start;
   font-size: var(--fs-caption);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-semibold);
+  padding: 2px var(--space-8);
+  border-radius: var(--radius-sm);
 }
 
 .metric-tile__trend--up {
-  color: var(--color-success);
+  background-color: var(--color-success);
+  color: var(--color-bg);
 }
 
 .metric-tile__trend--down {
-  color: var(--color-danger);
+  background-color: var(--color-danger);
+  color: var(--color-bg);
 }
 
 .metric-tile__trend--warning {
-  color: var(--color-warning);
+  background-color: var(--color-warning);
+  color: var(--color-bg);
 }
 
 .dashboard-mockup__graph {
@@ -981,18 +986,18 @@ section {
 }
 
 .event-list__badge--warning {
-  background-color: rgba(245, 158, 11, 0.15);
-  color: var(--color-warning);
+  background-color: var(--color-warning);
+  color: var(--color-bg);
 }
 
 .event-list__badge--danger {
-  background-color: rgba(239, 68, 68, 0.15);
-  color: var(--color-danger);
+  background-color: var(--color-danger);
+  color: var(--color-bg);
 }
 
 .event-list__badge--info {
-  background-color: rgba(56, 189, 248, 0.15);
-  color: var(--color-info);
+  background-color: var(--color-info);
+  color: var(--color-bg);
 }
 
 .indicator-list__item {
@@ -1230,8 +1235,8 @@ section {
 
 .site-footer__soon {
   font-size: var(--fs-small);
+  font-style: italic;
   color: var(--color-text-secondary);
-  opacity: 0.5;
 }
 
 .site-footer__copyright {
