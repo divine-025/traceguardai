@@ -1117,3 +1117,113 @@ section {
 .card--solution .card__title {
   font-size: var(--fs-h3);
 }
+
+/* --------------------------------------------------------------------------
+   16. FINAL CTA + FOOTER
+   -------------------------------------------------------------------------- */
+
+.final-cta {
+  background: linear-gradient(180deg, var(--color-surface-alt), var(--color-bg));
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.final-cta__inner {
+  max-width: 640px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.final-cta__lead {
+  margin-top: var(--space-16);
+  font-size: var(--fs-body-lg);
+  color: var(--color-text-secondary);
+}
+
+.final-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-16);
+  margin-top: var(--space-32);
+}
+
+.site-footer {
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding-block: var(--space-64);
+}
+
+.site-footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-32);
+  padding-bottom: var(--space-48);
+}
+
+@media (min-width: 768px) {
+  .site-footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-footer__grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  }
+}
+
+.site-footer__logo {
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-bold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-8);
+}
+
+.site-footer__tagline {
+  font-size: var(--fs-small);
+  color: var(--color-text-secondary);
+  max-width: 32ch;
+}
+
+.site-footer__heading {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: var(--space-16);
+}
+
+.site-footer__group ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.site-footer__group a {
+  font-size: var(--fs-small);
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.site-footer__group a:hover,
+.site-footer__group a:focus-visible {
+  color: var(--color-accent);
+}
+
+.site-footer__soon {
+  font-size: var(--fs-small);
+  color: var(--color-text-secondary);
+  opacity: 0.5;
+}
+
+.site-footer__copyright {
+  padding-top: var(--space-32);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--fs-caption);
+  color: var(--color-text-secondary);
+  text-align: center;
+}
